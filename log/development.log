@@ -1,0 +1,1975 @@
+
+
+Started GET "/" for ::1 at 2015-04-28 08:14:04 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.5ms)
+Completed 200 OK in 30ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateCreatures (20150428152339)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "creatures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150428152339"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mCreature Load (1.1ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  [1m[36mCreature Load (1.6ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+
+
+Started GET "/" for ::1 at 2015-04-28 08:47:58 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-04-28 08:48:04 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (56.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (123.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 08:48:52 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index" for ::1 at 2015-04-28 08:49:12 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (50.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.1ms)
+
+
+Started GET "/index" for ::1 at 2015-04-28 08:50:58 -0700
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (54.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 08:51:25 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.3ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1345ms (Views: 1341.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 08:51:29 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (16.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe3261df80>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227432799020'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (105.0ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 08:51:29 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (21.9ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe338a0338>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227431038280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (114.9ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:21:39 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:21:42 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe37ed1a78>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227432799020'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (56.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (46.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (105.9ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:21:42 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe3834ee20>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227431038280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (110.0ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:24:49 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe329c0bd8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227431038280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (107.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:24:53 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.1ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:24:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:24:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:24:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:24:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:24:53 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:24:55 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe32667f90>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227432799020'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (113.7ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:24:55 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe37f8e420>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227431038280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (46.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (105.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:25:43 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do, expecting :: or '[' or '.'
+...uffer.append=  for @creature do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do, expecting :: or '[' or '.'
+  app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (47.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (104.0ms)
+
+
+Started GET "/creatures/" for ::1 at 2015-04-28 09:28:52 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.4ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:28:54 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+...strap_form_for for @creature do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+  app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (57.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (126.5ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:28:54 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+...strap_form_for for @creature do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+  app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (107.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:28:55 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+...strap_form_for for @creature do |f| @output_buffer.safe_appe...
+...                               ^
+/Users/Bradford/Desktop/bog/app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/creatures/new.html.erb:5: syntax error, unexpected keyword_do_block, expecting :: or '[' or '.'
+  app/views/creatures/new.html.erb:12: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (109.8ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:32:03 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.7ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe3992f0a0>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227493220000'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.2ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:32:12 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (12.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe39a39568>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227493765440'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (66.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (109.5ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:32:12 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fbe35e21238>:0x007fbe35968458>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___3659792083635021358_70227493220000'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (114.3ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:33:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.4ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 175ms (Views: 164.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:33:18 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (22.2ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fc0ed1bad40>:0x007fc0eca77b78>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__1105474264467490173_70233290421340'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (21.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (58.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (127.8ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:33:18 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fc0ed1bad40>:0x007fc0eec48d10>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__1105474264467490173_70233308123280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (119.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:33:53 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 19.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:33:53 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:33:53 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:33:53 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:33:53 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:33:53 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:33:54 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fc0ed1bad40>:0x007fc0f238e180>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__1105474264467490173_70233290421340'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (55.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (126.3ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:33:54 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (13.1ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007fc0ed1bad40>:0x007fc0ecb81988>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__1105474264467490173_70233308123280'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (54.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (122.7ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:34:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.1ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 146ms (Views: 137.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:34:17 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.3ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff0358e2880>:0x007ff038d0d600>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (53.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (123.7ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:34:18 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (15.2ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff0358e2880>:0x007ff0359be4c0>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.7ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:35:59 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff0358e2880>:0x007ff034b9cb08>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (109.6ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:36:03 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 27.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:36:04 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:36:04 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:36:04 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:36:04 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:36:04 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:36:05 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff0358e2880>:0x007ff038e433f8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (53.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (108.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:36:06 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff0358e2880>:0x007ff034c4d958>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (113.6ms)
+
+
+Started GET "/creatures/show" for ::1 at 2015-04-28 09:37:13 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"show"}
+  [1m[35mCreature Load (0.2ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 10ms (ActiveRecord: 0.2ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Creature with 'id'=show):
+  app/controllers/creatures_controller.rb:17:in `show'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (109.6ms)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "creatures" ("name", "age", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Hodor"], ["age", 55], ["description", "HODOR"], ["created_at", "2015-04-28 16:42:36.350106"], ["updated_at", "2015-04-28 16:42:36.350106"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "creatures" ("name", "age", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Medusa"], ["age", 45], ["description", "Gorgon"], ["created_at", "2015-04-28 16:43:00.109245"], ["updated_at", "2015-04-28 16:43:00.109245"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "creatures" ("name", "age", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bigfoot"], ["age", 34], ["description", "PNW Hero"], ["created_at", "2015-04-28 16:43:39.189725"], ["updated_at", "2015-04-28 16:43:39.189725"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for ::1 at 2015-04-28 09:43:47 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/creatures/1" for ::1 at 2015-04-28 09:43:51 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCreature Load (0.2ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered creatures/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/creatures/2" for ::1 at 2015-04-28 09:43:57 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered creatures/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/3" for ::1 at 2015-04-28 09:44:02 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered creatures/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:44:04 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff035ae8e18>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (111.4ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:44:05 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff038d1f5f8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (113.6ms)
+
+
+Started GET "/creatures/2" for ::1 at 2015-04-28 09:44:18 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered creatures/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:44:33 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (12.8ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff034754e38>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (113.2ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:44:34 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff034c97eb8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (110.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:46:29 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.2ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:46:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:46:29 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:46:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:46:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:46:29 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:46:31 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (14.5ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff03b03a6f0>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (116.2ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:46:31 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff038e921d8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (46.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (107.4ms)
+
+
+Started GET "/creatures/" for ::1 at 2015-04-28 09:48:56 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/" for ::1 at 2015-04-28 09:48:58 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.1ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:48:59 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:48:59 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:48:59 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:48:59 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:48:59 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:49:00 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (17.4ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff03800a0e8>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334861042080'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (59.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.6ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:49:00 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (14.7ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `bootstrap_form_for' for #<#<Class:0x007ff038757f30>:0x007ff034b24590>):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb__560825971378120231_70334859533200'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (48.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (110.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:50:57 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.1ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 315ms (Views: 305.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:50:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:50:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:50:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:50:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:50:57 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:50:59 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (4.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___1437989748782740024_70336777256580'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.2ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (111.2ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:50:59 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    2: 
+    3: <div class="row">
+    4:   <div class="col-md-4 col-md-offset-4">
+    5:     <%= bootstrap_form_for @creature do |f| %>
+    6:     <%= f.text_field :name, :placeholder =>"Enter a creature" %>
+    7:     <%= f.text_field :description %>
+    8:     <%= f.primary %>
+  app/views/creatures/new.html.erb:5:in `_app_views_creatures_new_html_erb___1437989748782740024_70336763649040'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (110.8ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 09:52:09 -0700
+Processing by CreaturesController#index as HTML
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT "creatures".* FROM "creatures"[0m
+  Rendered creatures/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:52:09 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:52:09 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:52:09 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:52:09 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:52:09 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:52:10 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (29.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:52:46 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:52:46 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:52:46 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:52:46 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:52:46 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:52:46 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:52:48 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 22ms (Views: 21.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:52:48 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:52:48 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:52:48 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:52:48 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:52:48 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:53:03 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:53:03 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:53:03 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:53:03 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:53:03 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:53:03 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:53:12 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:53:12 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:53:12 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:53:12 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:53:12 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:53:12 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:53:29 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:53:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:53:29 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:53:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:53:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:53:29 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:54:21 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:54:21 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:54:21 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:54:21 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:54:21 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:54:21 -0700
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:54:29 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 21ms (Views: 20.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:54:29 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:54:29 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:54:29 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:54:29 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:54:29 -0700
+
+
+Started POST "/creatures" for ::1 at 2015-04-28 09:55:14 -0700
+Processing by CreaturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sNpkPX5OMhn9f8sIJTCIodiOAvkd664QCg6yQUtjXKngWia/MJKvW1ymHOTJXWU94XeTaCFFP1LUXrNMQrB9Ew==", "creature"=>{"name"=>"Tinkerbell", "description"=>"Fairy"}, "commit"=>"Create Creature"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "creatures" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Tinkerbell"], ["description", "Fairy"], ["created_at", "2015-04-28 16:55:14.763098"], ["updated_at", "2015-04-28 16:55:14.763098"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/creatures/4
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/creatures/4" for ::1 at 2015-04-28 09:55:14 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCreature Load (0.2ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered creatures/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:55:27 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/creatures" for ::1 at 2015-04-28 09:56:31 -0700
+Processing by CreaturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FJtYcCDpWx5dLpVWVOawlxqokM4UKHETrwPKPhiqIJVEGxrybjXGXPz3Qrq4i10LI1EBXyiG4FFxU8szEXkBLw==", "creature"=>{"name"=>"", "description"=>""}, "commit"=>"Create Creature"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "creatures" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["description", ""], ["created_at", "2015-04-28 16:56:31.824380"], ["updated_at", "2015-04-28 16:56:31.824380"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/creatures/5
+Completed 302 Found in 13ms (ActiveRecord: 9.2ms)
+
+
+Started GET "/creatures/5" for ::1 at 2015-04-28 09:56:31 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mCreature Load (0.3ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered creatures/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/creatures/new" for ::1 at 2015-04-28 09:57:43 -0700
+Processing by CreaturesController#new as HTML
+  Rendered creatures/new.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 21ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:57:43 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:57:43 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:57:43 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:57:43 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:57:43 -0700
+
+
+Started POST "/creatures" for ::1 at 2015-04-28 09:58:00 -0700
+Processing by CreaturesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WenvKYt/efM6e6ekpha3w4/yfSgqVxylnOiu29oFcPoJaa2rxaPksZuicEhKe1pftgvsuRb5jedCuK/W09ZRQA==", "creature"=>{"name"=>"Dracula", "description"=>"Vampire"}, "commit"=>"Create Creature"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "creatures" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Dracula"], ["description", "Vampire"], ["created_at", "2015-04-28 16:58:00.820182"], ["updated_at", "2015-04-28 16:58:00.820182"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/creatures/6
+Completed 302 Found in 6ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:58:00 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:58:30 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:58:30 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:58:30 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:58:30 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:58:30 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:58:30 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:58:48 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+SyntaxError (/Users/Bradford/Desktop/bog/app/views/creatures/show.html.erb:3: unterminated regexp meets end of file
+/Users/Bradford/Desktop/bog/app/views/creatures/show.html.erb:3: syntax error, unexpected end-of-input, expecting ')'):
+  app/views/creatures/show.html.erb:3: unterminated regexp meets end of file
+  app/views/creatures/show.html.erb:3: syntax error, unexpected end-of-input, expecting ')'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (109.1ms)
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:58:56 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (1.8ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    1: <h1>Creature Bio</h1>
+    2: 
+    3: <%= @creature.name "/n" %>
+    4: <%= @creature.description %>
+  app/views/creatures/show.html.erb:3:in `_app_views_creatures_show_html_erb__3832982908048509828_70336804671240'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (111.9ms)
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:59:32 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 09:59:32 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 09:59:32 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 09:59:32 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 09:59:32 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 09:59:32 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 09:59:41 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.1ms)
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    1: <h1>Creature Bio</h1>
+    2: 
+    3: <%= @creature.name "\n"%>
+    4: <%= @creature.description %>
+  app/views/creatures/show.html.erb:3:in `_app_views_creatures_show_html_erb__3832982908048509828_70336758364220'
+
+
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (50.0ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/Bradford/.rbenv/versions/2.2.1/lib/ruby/gems/2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (111.4ms)
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:00:22 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:00:22 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:00:22 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:00:22 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:00:22 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:00:22 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:00:57 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:00:57 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:00:57 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:00:57 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:00:57 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:00:57 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:01:24 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:01:24 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:01:24 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:01:24 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:01:24 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:01:24 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:01:38 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 20.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:01:38 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:01:38 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:01:38 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:01:38 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:01:38 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:02:05 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:02:05 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:02:05 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:02:05 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:02:05 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:02:05 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:02:15 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:02:15 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:02:15 -0700
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:02:15 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:02:15 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:02:15 -0700
+
+
+Started GET "/creatures/6" for ::1 at 2015-04-28 10:02:25 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 6]]
+  Rendered creatures/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 10:02:25 -0700
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-04-28 10:02:25 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2015-04-28 10:02:25 -0700
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 10:02:25 -0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-04-28 10:02:25 -0700
+
+
+Started GET "/creatures/" for ::1 at 2015-04-28 10:04:20 -0700
+Processing by CreaturesController#index as HTML
+  [1m[35mCreature Load (0.1ms)[0m  SELECT "creatures".* FROM "creatures"
+  Rendered creatures/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/4" for ::1 at 2015-04-28 10:04:26 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered creatures/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/1" for ::1 at 2015-04-28 10:04:29 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered creatures/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/3" for ::1 at 2015-04-28 10:04:40 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCreature Load (0.1ms)[0m  [1mSELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered creatures/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/creatures/1" for ::1 at 2015-04-28 10:04:44 -0700
+Processing by CreaturesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mCreature Load (0.1ms)[0m  SELECT  "creatures".* FROM "creatures" WHERE "creatures"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered creatures/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.1ms)
